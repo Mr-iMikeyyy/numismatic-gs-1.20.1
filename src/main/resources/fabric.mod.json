@@ -5,7 +5,7 @@
 	"name": "Numismatic Golden Sink",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Mad Mike"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,19 +16,12 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"madmike.numismaticgs.NumismaticGoldenSink"
+			"madmike.numismaticgs.NGSServer"
 		],
 		"client": [
-			"madmike.numismaticgs.NumismaticGoldenSinkClient"
+			"madmike.numismaticgs.NGSClient"
 		]
 	},
-	"mixins": [
-		"numismatic-gs.mixins.json",
-		{
-			"config": "numismatic-gs.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
 		"minecraft": "~1.20.1",

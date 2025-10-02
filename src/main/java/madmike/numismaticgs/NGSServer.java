@@ -5,7 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class NumismaticGoldenSink implements ModInitializer {
+public class NGSServer implements ModInitializer {
 	public static final String MOD_ID = "numismatic-gs";
 
 	// This logger is used to write text to the console and the log file.
