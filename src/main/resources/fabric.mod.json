@@ -3,7 +3,7 @@
 	"id": "numismatic-gs",
 	"version": "${version}",
 	"name": "Numismatic Golden Sink",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A simple gold sink for players that increases their level with increasing costs.",
 	"authors": [
 		"Mad Mike"
 	],
@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"madmike.numismaticgs.NGSClient"
+		],
+		"cardinal-components-scoreboard": [
+			"madmike.numismaticgs.NGSComponents"
 		]
 	},
 	"depends": {
@@ -30,5 +33,11 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"cardinal-components": [
+			"numismatic-gs:player_levels",
+			"numismatic-gs:player_names"
+		]
 	}
 }

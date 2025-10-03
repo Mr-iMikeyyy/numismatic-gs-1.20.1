@@ -11,12 +11,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class GoldSinkComponent implements ComponentV3 {
+public class PlayerLevelsComponent implements ComponentV3 {
 
     private MinecraftServer sv;
     private Scoreboard sb;
 
-    public GoldSinkComponent(Scoreboard sb, MinecraftServer sv) {
+    public PlayerLevelsComponent(Scoreboard sb, MinecraftServer sv) {
         this.sv = sv;
         this.sb = sb;
     }

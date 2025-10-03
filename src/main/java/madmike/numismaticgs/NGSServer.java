@@ -1,5 +1,7 @@
 package madmike.numismaticgs;
 
+import madmike.numismaticgs.command.NGSCommand;
+import madmike.numismaticgs.events.NGSEvents;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +21,12 @@ public class NGSServer implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+
+
+		NGSCommand.register();
+
+		NGSEvents.register();
+
+		LOGGER.info("Numismatic-GS started");
 	}
 }
